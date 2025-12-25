@@ -1,0 +1,6 @@
+@echo off
+echo Stopping backend...
+docker rm -f backend
+echo Rebuilding and starting backend...
+docker-compose up -d --build backend
+echo Done.
